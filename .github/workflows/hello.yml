@@ -8,6 +8,7 @@ jobs:
       - name: my-step
         env:
           MAG_KEY: ${{ secrets.MAG_KEY }}
+        uses: actions/checkout@v2
         run: |
           echo "Hello World!"
           echo ${{ secrets.SECRET_TOKEN }}
