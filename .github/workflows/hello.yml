@@ -6,6 +6,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: my-step
+        env:
+          MAG_KEY: ${{ secrets.MAG_KEY }}
         run: |
           echo "Hello World!"
           echo ${{ secrets.SECRET_TOKEN }}
+          echo $MAG_KEY
