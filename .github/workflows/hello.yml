@@ -12,3 +12,4 @@ jobs:
           echo "Hello World!"
           echo ${{ secrets.SECRET_TOKEN }}
           echo $MAG_KEY
+          python print_env.py
